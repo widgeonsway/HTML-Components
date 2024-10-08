@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Table</title>
+    <style>
+      :root {
+        --primary-color: #1b4b94;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        color: var(--text-color);
+        line-height: 1;
+        display: flex;
+        justify-content: center;
+      }
+
+      table {
+        width: 800px;
+        margin: 100px;
+        /* border: 1px solid #343a40; */
+        border-collapse: collapse;
+        font-size: 18px;
+      }
+
+      th,
+      td {
+        /* border: 1px solid #343a40; */
+        padding: 16px 24px;
+        text-align: left;
+      }
+
+      thead th {
+        background-color: var(--primary-color);
+        color: #fff;
+        width: 25%;
+      }
+
+      tbody tr:nth-child(odd) {
+        background-color: #ced4da;
+      }
+      tbody tr:nth-child(even) {
+        background-color: #a1aed8;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Piece</th>
+          <th>The Horizon Bowl</th>
+          <th>The Whisper Jug</th>
+          <th>The Nest Bowl</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Height</th>
+          <td>10 cm</td>
+          <td>6 cm</td>
+          <td>20 cm</td>
+        </tr>
+        <tr>
+          <th>Width</th>
+          <td>30 cm</td>
+          <td>15 cm</td>
+          <td>15 cm</td>
+        </tr>
+        <tr>
+          <th>Finish</th>
+          <td>Gloss</td>
+          <td>Matte</td>
+          <td>Gloss</td>
+        </tr>
+        <tr>
+          <th>Weight</th>
+          <td>2 lb</td>
+          <td>4 lb</td>
+          <td>3 lb</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
